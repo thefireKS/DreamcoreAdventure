@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Art/Scenes/Train/SC_train.unity
+    guid: 8ac6eef1583498a468b97fe3ced6254d
+  - enabled: 1
+    path: Assets/Scenes/DiningRoom.unity
+    guid: 6a8a36f8457ca634787dfe2c15309004
   m_configObjects: {}
