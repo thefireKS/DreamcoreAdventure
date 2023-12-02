@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 90a6d8f37db021d4d8923a12681de795
+guid: f12b86d1c38f72146a9718f71e1a105e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MTL_train_emission
+    second: {fileID: 2100000, guid: 18b4405b8a658cd4db0c82cc01cb3f77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MTL_train_main
+    second: {fileID: 2100000, guid: 054b6e9863b3af748bc27909119a8ef3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
