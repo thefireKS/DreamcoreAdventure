@@ -18,12 +18,13 @@ public class MagicDoorSceneLoader : MonoBehaviour
     private IEnumerator AsyncLoadScene(string scene)
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
-
+        
         while (!asyncLoad.isDone)
         {
             yield return null;
         }
-
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(scene));
+        
         currentSceneLoadingCoroutine = null;
         transform.gameObject.SetActive(false);
     }
