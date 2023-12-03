@@ -15,6 +15,7 @@ Shader "Unlit/SH_SS_VHS"
         Tags { "RenderType"="Opaque" }
         LOD 100
 
+
         Pass
         {
             CGPROGRAM
@@ -49,12 +50,6 @@ Shader "Unlit/SH_SS_VHS"
             float _Blur;
             float _Discoloration;
             float _Distortion;
-
-            float v2random( float2 uv ) {
-            return tex2D( _Noise, fmod( uv, 1 ) ).x;
-            }
-
-
 
             float3 CA(sampler2D tex, float2 uv)
             {
@@ -145,13 +140,11 @@ Shader "Unlit/SH_SS_VHS"
 
             float4 mainImage( float2 uv )
             {
-                // uv *= 1 - _Distortion*0.1;
-                // uv += _Distortion/2*0.1; 
                 uv = DistortUV(uv);
 
                 uv = crt(uv, _Distortion);
-                
-                float3 colour = Blur(_MainTex, uv);
+                float3 colour;
+                colour = Blur(_MainTex, uv);
                 colour = ColourCorrect(colour);
                 colour = Finalize(colour, uv);
                 
@@ -175,12 +168,7 @@ Shader "Unlit/SH_SS_VHS"
 
             fixed4 frag (v2f i) : SV_Target
             {
-                // sample the tex2D
-                // fixed4 col = tex2D(_MainTex, i.uv);
                 fixed4 col = mainImage(i.uv);
-                // apply fog
-
-                UNITY_APPLY_FOG(i.fogCoord, col);
                 return col * vignette(i.uv);
             }
             ENDCG
