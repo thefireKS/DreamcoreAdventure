@@ -102,16 +102,16 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _Blur: 0.001
+    - _Blur: 0.00062
     - _BumpScale: 1
-    - _CA: 0.001
+    - _CA: 0.00208
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Discoloration: 0.03
+    - _Discoloration: 0.0022
     - _Distortion: 2
     - _DstBlend: 0
     - _DstBlendAlpha: 0
@@ -124,7 +124,7 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Sharpen: 0.001
+    - _Sharpen: 0.00149
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
