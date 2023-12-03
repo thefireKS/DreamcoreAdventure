@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DiningRoom.unity
     guid: 6a8a36f8457ca634787dfe2c15309004
+  - enabled: 1
+    path: Assets/Scenes/Player.unity
+    guid: 190d59ccd5eaea94aa2ff18d580dc739
   m_configObjects: {}
