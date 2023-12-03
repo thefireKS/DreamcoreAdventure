@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3877551095409667936}
   - component: {fileID: 7572085247886936438}
   - component: {fileID: 6549106660195878684}
+  - component: {fileID: 8139653615571214263}
   m_Layer: 0
   m_Name: Stol
   m_TagString: Untagged
@@ -106,6 +107,32 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.6070497, y: 0.8538363, z: 3.961348}
   m_Center: {x: -0.0129772425, y: 0.5075662, z: -0.008282423}
+--- !u!205 &8139653615571214263
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3050759215867367082}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.025
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 76869941687461918}
+  - screenRelativeHeight: 0.025
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 76869941687461918}
+  - screenRelativeHeight: 0.025
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1001 &1643969375403586714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -194,6 +221,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3520b748dc8db9748bb4e0f98625c732, type: 3}
+--- !u!23 &76869941687461918 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 3520b748dc8db9748bb4e0f98625c732,
+    type: 3}
+  m_PrefabInstance: {fileID: 1643969375403586714}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1250369101351637873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3520b748dc8db9748bb4e0f98625c732,
