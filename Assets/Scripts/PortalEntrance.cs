@@ -1,15 +1,30 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PortalEntrance : MonoBehaviour
 {
     [SerializeField] private string cameraToPortalName;
+
+    public static event Action OnTeleportation;
+    
     private void OnTriggerEnter(Collider other)
     {
+        Vector3 newPos = Vector3.zero;
         if (!other.CompareTag("Player")) return;
-        var newPos = GameObject.Find(cameraToPortalName).transform;
-        other.transform.position = new Vector3(newPos.position.x, 0, newPos.position.z);
+        var cameras = FindObjectsByType<Camera>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        foreach (var camera in cameras)
+        {
+            if (camera.gameObject.name == cameraToPortalName)
+            {
+                newPos = camera.transform.position;
+                newPos.y = 0;
+                camera.gameObject.SetActive(false);
+                break;
+            }
+        }
+        other.transform.position = newPos;
+        OnTeleportation?.Invoke();
     }
+    
+    
 }
