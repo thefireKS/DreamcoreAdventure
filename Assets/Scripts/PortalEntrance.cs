@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PortalEntrance : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class PortalEntrance : MonoBehaviour
             }
         }
         other.transform.position = newPos;
+        SceneManager.UnloadSceneAsync(gameObject.scene);
         OnTeleportation?.Invoke();
     }
     
