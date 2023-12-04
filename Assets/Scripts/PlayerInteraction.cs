@@ -17,10 +17,15 @@ public class PlayerInteraction : MonoBehaviour
 
     private void TryInteract()
     {
+        Debug.Log("Try interact");
         Ray ray = Camera.main.ScreenPointToRay(new Vector3((float)Screen.width / 2, (float)Screen.height / 2, 0));
-        
-        if (!Physics.Raycast(ray, out var hit, interactionRange, interactableLayer)) return;
+
+        if (!Physics.Raycast(ray, out var hit, interactionRange, interactableLayer))
+        {
+            return;
+        }
         IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+        Debug.Log(hit.transform.name);
 
         interactable?.Interact();
     }
