@@ -10,22 +10,25 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-
             TryInteract();
         }
     }
 
+    private void OnDrawGizmos()
+    {
+        Debug.DrawRay(Camera.main.ScreenToWorldPoint(new Vector3((float)Screen.width / 2, (float)Screen.height / 2, 0)), Camera.main.transform.forward);
+    }
+
     private void TryInteract()
     {
-        Debug.Log("Try interact");
         Ray ray = Camera.main.ScreenPointToRay(new Vector3((float)Screen.width / 2, (float)Screen.height / 2, 0));
-
-        if (!Physics.Raycast(ray, out var hit, interactionRange, interactableLayer))
+        Physics.Raycast(ray, out var hit, interactionRange, interactableLayer);
+        if (!hit.transform)
         {
             return;
         }
+        
         IInteractable interactable = hit.collider.GetComponent<IInteractable>();
-        Debug.Log(hit.transform.name);
 
         interactable?.Interact();
     }
