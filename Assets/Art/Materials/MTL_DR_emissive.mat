@@ -22,10 +22,11 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: MTL_DR_emissive
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_Parent: {fileID: 2100000, guid: 15c2d8b85881cdc45bdbd39ce7283e71, type: 2}
+  m_Parent: {fileID: 2100000, guid: ef2cd676f84a3954a86e49c58f584e41, type: 2}
   m_ModifiedSerializedProperties: 6
   m_ValidKeywords:
   - _EMISSION
+  - _METALLICSPECGLOSSMAP
   m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
