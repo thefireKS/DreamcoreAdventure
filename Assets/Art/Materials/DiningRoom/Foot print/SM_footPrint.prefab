@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1276145754228919507}
   - component: {fileID: 5912545516770424909}
   - component: {fileID: 8239851748254370190}
-  - component: {fileID: 1621545775841267271}
   m_Layer: 0
   m_Name: SM_footPrint
   m_TagString: Untagged
@@ -27,9 +26,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2991566807023038807}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.6568211, z: -0, w: 0.7540465}
+  m_LocalRotation: {x: 0, y: 0.6568227, z: 0, w: 0.75404507}
   m_LocalPosition: {x: 70.575, y: 0.029, z: -19.873}
-  m_LocalScale: {x: 0.09171111, y: 0.09171111, z: 0.09171111}
+  m_LocalScale: {x: 0.024615265, y: 0.024615264, z: 0.024615265}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,25 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1621545775841267271
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2991566807023038807}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
