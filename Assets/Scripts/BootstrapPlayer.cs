@@ -6,7 +6,8 @@ public class BootstrapPlayer : MonoBehaviour
 {
     private void Start()
     {
-        SceneManager.LoadSceneAsync("SC_player", LoadSceneMode.Additive);
+        if(!SceneManager.GetSceneByName("SC_player").isLoaded)
+            SceneManager.LoadSceneAsync("SC_player", LoadSceneMode.Additive);
         
         Destroy(this);
     }
