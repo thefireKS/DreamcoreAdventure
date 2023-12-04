@@ -254,70 +254,14 @@ LightProbeGroup:
   m_GameObject: {fileID: 47655960}
   m_Enabled: 1
   m_SourcePositions:
-  - {x: 1, y: 1, z: 1.3358594}
-  - {x: 1, y: 1, z: 0.877759}
-  - {x: 1, y: -1, z: 1.3358594}
-  - {x: 1, y: -1, z: 0.877759}
-  - {x: -1, y: 1, z: 1.3358594}
-  - {x: -0.35727215, y: 1, z: 0.877759}
-  - {x: -0.18322182, y: -1, z: 1.2814075}
-  - {x: -0.1352768, y: -1, z: 0.86938167}
-  - {x: -2.4552336, y: 1, z: 0.44452843}
-  - {x: -2.1217432, y: 1, z: 0.13195136}
-  - {x: -2.4552336, y: -1, z: 0.44452843}
-  - {x: -2.1175547, y: -1, z: 0.17802605}
-  - {x: 3.528469, y: 1, z: 1.3358594}
-  - {x: 3.528469, y: 1, z: 0.877759}
-  - {x: 3.528469, y: -1, z: 1.3358594}
-  - {x: 3.528469, y: -1, z: 0.877759}
-  - {x: 5.682125, y: 1, z: 1.3358594}
-  - {x: 5.682125, y: 1, z: 0.877759}
-  - {x: 5.682125, y: -1, z: 1.3358594}
-  - {x: 5.682125, y: -1, z: 0.877759}
-  - {x: 8.116333, y: 1, z: 1.3358594}
-  - {x: 8.116333, y: 1, z: 0.877759}
-  - {x: 8.116333, y: -1, z: 1.3358594}
-  - {x: 8.116333, y: -1, z: 0.877759}
-  - {x: 10.369007, y: 1, z: 1.3358594}
-  - {x: 10.369007, y: 1, z: 0.877759}
-  - {x: 10.369007, y: -1, z: 1.3358594}
-  - {x: 10.369007, y: -1, z: 0.877759}
-  - {x: 12.910486, y: 1, z: 1.3358594}
-  - {x: 12.910486, y: 1, z: 0.877759}
-  - {x: 12.910486, y: -1, z: 1.3358594}
-  - {x: 12.910486, y: -1, z: 0.877759}
-  - {x: 15.154908, y: 1, z: 1.3358594}
-  - {x: 15.154908, y: 1, z: 0.877759}
-  - {x: 15.154908, y: -1, z: 1.3358594}
-  - {x: 15.154908, y: -1, z: 0.877759}
-  - {x: 17.704638, y: 1, z: 1.3358594}
-  - {x: 17.704638, y: 1, z: 0.877759}
-  - {x: 17.704638, y: -1, z: 1.3358594}
-  - {x: 17.704638, y: -1, z: 0.877759}
-  - {x: 19.94906, y: 1, z: 1.3358594}
-  - {x: 19.94906, y: 1, z: 0.877759}
-  - {x: 19.94906, y: -1, z: 1.3358594}
-  - {x: 19.94906, y: -1, z: 0.877759}
-  - {x: 22.424526, y: 1, z: 1.3358594}
-  - {x: 22.424526, y: 1, z: 0.877759}
-  - {x: 22.424526, y: -1, z: 1.3358594}
-  - {x: 22.424526, y: -1, z: 0.877759}
-  - {x: 23.96547, y: 1, z: 1.3358594}
-  - {x: 23.67051, y: 1, z: 0.877759}
-  - {x: 23.58201, y: -1, z: 1.2957966}
-  - {x: 23.627586, y: -1, z: 0.90065193}
-  - {x: 25.184643, y: 1, z: 0.8049289}
-  - {x: 24.889683, y: 1, z: 0.34682846}
-  - {x: 25.104517, y: -1, z: 0.72766495}
-  - {x: 24.895405, y: -1, z: 0.36113662}
-  - {x: 26.666965, y: -1, z: 0.08093676}
-  - {x: 26.669615, y: -1, z: -0.3199311}
-  - {x: 5.6943893, y: -1, z: 0.088784784}
-  - {x: 5.6943893, y: -1, z: -0.5530232}
-  - {x: 8.116333, y: -1, z: 0.17716631}
-  - {x: 8.116333, y: -1, z: -0.7071185}
-  - {x: 10.369007, y: -1, z: 0.3608582}
-  - {x: 10.369007, y: -1, z: -0.31837496}
+  - {x: 19.013323, y: 1, z: 1.3358594}
+  - {x: 19.013323, y: 1, z: 0.877759}
+  - {x: 19.013323, y: -1, z: 1.3358594}
+  - {x: 19.013323, y: -1, z: 0.877759}
+  - {x: 20.874264, y: 1, z: 1.3358594}
+  - {x: 20.874264, y: 1, z: 0.877759}
+  - {x: 20.874264, y: -1, z: 1.3358594}
+  - {x: 20.874264, y: -1, z: 0.877759}
   m_Dering: 1
 --- !u!4 &47655962
 Transform:
@@ -543,7 +487,7 @@ Light:
   m_Type: 3
   m_Shape: 0
   m_Color: {r: 0.654902, g: 0.33333334, b: 0.8, a: 1}
-  m_Intensity: 3
+  m_Intensity: 9
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -943,6 +887,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lerpDuration: 1.5
   path: 40
+--- !u!1 &420071817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8754391292351276496, guid: 662900e745095f6429a614f1ff60c110,
+    type: 3}
+  m_PrefabInstance: {fileID: 2676376133522860868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &440298656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1124,10 +1074,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d64c74b981d394d4f83a7a9c92cb1371,
+        type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d64c74b981d394d4f83a7a9c92cb1371,
         type: 3}
       propertyPath: m_Name
       value: SM_train_door
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d64c74b981d394d4f83a7a9c92cb1371,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3168,10 +3128,20 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1253938724769195624, guid: 662900e745095f6429a614f1ff60c110, type: 3}
+    - {fileID: 4240503114960150423, guid: 662900e745095f6429a614f1ff60c110, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8754391292351276496, guid: 662900e745095f6429a614f1ff60c110,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2676376133522860870}
+    - targetCorrespondingSourceObject: {fileID: 8754391292351276496, guid: 662900e745095f6429a614f1ff60c110,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2676376133522860871}
   m_SourcePrefab: {fileID: 100100000, guid: 662900e745095f6429a614f1ff60c110, type: 3}
 --- !u!4 &2676376133522860869 stripped
 Transform:
@@ -3179,6 +3149,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2676376133522860868}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2676376133522860870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420071817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c499e974aec0c24ab99015ec392f224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 1537182360}
+--- !u!135 &2676376133522860871
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420071817}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.57
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &6485240835485206901
 PrefabInstance:
   m_ObjectHideFlags: 0
