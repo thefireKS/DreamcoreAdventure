@@ -10,7 +10,7 @@ public class ItemChecker : MonoBehaviour, IInteractable
     private struct ItemAction
     {
         public Item item;
-        public UnityEvent action;
+        public UnityEvent[] actions;
     }
 
     [SerializeField] private List<ItemAction> checkList;
@@ -19,7 +19,10 @@ public class ItemChecker : MonoBehaviour, IInteractable
     {
         foreach (var itemAction in checkList.Where(itemAction => Inventory.instance.CheckItem(itemAction.item)))
         {
-            itemAction.action.Invoke();
+            foreach (var action in itemAction.actions)
+            {
+                action.Invoke();
+            }
             Inventory.instance.RemoveItem(itemAction.item);
             break;
         }
