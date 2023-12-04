@@ -255,6 +255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b36bcbca035d04da342f92edf7f124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  portalName: DoorPortalToDinningRoom
+  otherPortalName: DoorPortalToTrain
 --- !u!114 &147883295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,13 +360,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147883293}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.52543133, z: -0, w: 0.850836}
-  m_LocalPosition: {x: 0.347, y: 208.488, z: 0.787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.556, y: 208.922, z: 0.622}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -63.395, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &364779582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -770,6 +772,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 574611388578601580, guid: 51160ad80fc458946a0542a46f8f14a6,
+        type: 3}
+      propertyPath: sceneName
+      value: DiningRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 574611388578601580, guid: 51160ad80fc458946a0542a46f8f14a6,
+        type: 3}
+      propertyPath: myEntrance
+      value: 
+      objectReference: {fileID: 1125609121}
     - target: {fileID: 4241745088598442737, guid: 51160ad80fc458946a0542a46f8f14a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -824,6 +836,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DoorPortalToDinningRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932249666226882412, guid: 51160ad80fc458946a0542a46f8f14a6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Portal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1128,6 +1145,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 997272628}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1125609121 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4539126933032778690, guid: 51160ad80fc458946a0542a46f8f14a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 802332876}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb7d32541b6ef542ba0996ed05f0b81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1136371565
 GameObject:
   m_ObjectHideFlags: 0

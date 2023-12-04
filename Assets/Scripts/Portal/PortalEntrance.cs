@@ -7,19 +7,30 @@ public class PortalEntrance : MonoBehaviour
     [SerializeField] private string cameraToPortalName;
 
     public static event Action OnTeleportation;
+
+    private bool _isActive;
+
+    public void SetActive()
+    {
+        _isActive = true;
+    }
     
     private void OnTriggerEnter(Collider other)
     {
+        if(!_isActive) return;
+        
+        
+        
         Vector3 newPos = Vector3.zero;
         if (!other.CompareTag("Player")) return;
         var cameras = FindObjectsByType<Camera>(FindObjectsInactive.Include, FindObjectsSortMode.None);
-        foreach (var camera in cameras)
+        foreach (var cam in cameras)
         {
-            if (camera.gameObject.name == cameraToPortalName)
+            if (cam.gameObject.name == cameraToPortalName)
             {
-                newPos = camera.transform.position;
+                newPos = cam.transform.position;
                 newPos.y = 0;
-                camera.gameObject.SetActive(false);
+                cam.gameObject.SetActive(false);
                 break;
             }
         }
@@ -27,6 +38,4 @@ public class PortalEntrance : MonoBehaviour
         SceneManager.UnloadSceneAsync(gameObject.scene);
         OnTeleportation?.Invoke();
     }
-    
-    
 }

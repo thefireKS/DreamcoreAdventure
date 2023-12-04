@@ -1,13 +1,20 @@
-using System.Collections;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BootstrapPlayer : MonoBehaviour
 {
-    private void Start()
+    public static event Action playerLoaded;
+
+    public static bool isLoaded;
+    
+    private void Awake()
     {
-        if(!SceneManager.GetSceneByName("SC_player").isLoaded)
+        if (!SceneManager.GetSceneByName("SC_player").isLoaded)
+        {
             SceneManager.LoadSceneAsync("SC_player", LoadSceneMode.Additive);
+            isLoaded = true;
+        }
         
         Destroy(this);
     }
