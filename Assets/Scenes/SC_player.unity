@@ -249,7 +249,7 @@ PrefabInstance:
     - target: {fileID: 5269945355364510514, guid: f2e0b7ae4dae8cf44955bccd3512b213,
         type: 3}
       propertyPath: speed
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5272657471857185710, guid: f2e0b7ae4dae8cf44955bccd3512b213,
         type: 3}
@@ -273,10 +273,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7492485762413666113, guid: f2e0b7ae4dae8cf44955bccd3512b213,
         type: 3}
+      propertyPath: Priority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492485762413666113, guid: f2e0b7ae4dae8cf44955bccd3512b213,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492485762413666113, guid: f2e0b7ae4dae8cf44955bccd3512b213,
+        type: 3}
+      propertyPath: MinDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492485762413666113, guid: f2e0b7ae4dae8cf44955bccd3512b213,
+        type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 56a9a9323fe3d8b43af03471ed0521ca, type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 7492485762413666113, guid: f2e0b7ae4dae8cf44955bccd3512b213,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8898095385027781375, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
