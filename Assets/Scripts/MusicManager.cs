@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(MusicManager))]
 public class MusicManager : MonoBehaviour
 {
     public static MusicManager instance;
