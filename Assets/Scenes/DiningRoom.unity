@@ -50928,6 +50928,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hairpin
       objectReference: {fileID: 0}
+    - target: {fileID: 587454518052243087, guid: bc1b2b79c4d33fb4a85e79e573604145,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50944,6 +50949,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 953207459}
+    - targetCorrespondingSourceObject: {fileID: 587454518052243087, guid: bc1b2b79c4d33fb4a85e79e573604145,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 953207460}
   m_SourcePrefab: {fileID: 100100000, guid: bc1b2b79c4d33fb4a85e79e573604145, type: 3}
 --- !u!4 &953207455 stripped
 Transform:
@@ -55773,9 +55782,21 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5579449467046387162, guid: dcd25d3b71e90c4478c24860010a51a3, type: 3}
+--- !u!114 &953207460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953207456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528aa8f803614741a22f002fc99278ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &955880180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79513,7 +79534,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -1116444134294172880, guid: c3bc7ce38eab71e409092e68b3ec590a, type: 3}
+  m_Mesh: {fileID: -889180119648741084, guid: c3bc7ce38eab71e409092e68b3ec590a, type: 3}
 --- !u!1001 &1366295556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95333,7 +95354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkList:
-  - item: {fileID: 0}
+  - item: {fileID: 953207460}
     actions:
     - m_PersistentCalls:
         m_Calls:
