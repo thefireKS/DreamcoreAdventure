@@ -23,13 +23,15 @@ public class PlayerInteraction : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(new Vector3((float)Screen.width / 2, (float)Screen.height / 2, 0));
         Physics.Raycast(ray, out var hit, interactionRange, interactableLayer);
+        Physics.Raycast(ray, out var hit2, interactionRange);
+        Debug.Log($"{hit2.transform.name}");
         if (!hit.transform)
         {
             return;
         }
         
         IInteractable interactable = hit.collider.GetComponent<IInteractable>();
-
+        
         interactable?.Interact();
     }
 }
